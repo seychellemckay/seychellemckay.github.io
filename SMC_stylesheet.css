@@ -1,0 +1,262 @@
+* {
+    outline: 1px dotted lime;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+.logo { 
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    text-align:center;       
+ }
+
+
+
+
+/* Side menu Navigation */
+
+.sidenav {
+    display: inline;
+    float: right;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;     
+    right: 0;
+    background-color: mistyrose;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 10px 10px 25px;
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 50px;
+    margin-right: 75px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+    
+/* SLIDESHOW */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+margin-right: 60px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Transparent black background on hover */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.35);
+}
+
+
+/* The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+/* ABOUT ME */
+
+#aboutbox       {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+
+.aboutheading  {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    grid-column: 2/5;
+    text-align: center;
+}
+
+
+.abouttext {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    text-align:center;
+    grid-column: 2/5;
+}
+
+
+#contactbutton {
+     grid-column: 2/3;
+    float: inherit;
+}
+
+
+#portfoliobutton {
+     grid-column: 4/5;
+    float: inherit;
+}
+
+
+
+
+
+/* Designs */
+
+
+#designs {
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+
+#digital {
+   
+    
+}
+
+
+#digitalheading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+#digitalcontext {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    
+}
+
+#digitalbutton {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    outline-color: white;
+    outline-width: 2pt;
+    outline-style: solid;
+    grid-column: 2/3;
+    
+    
+}
+
+
+#digitalportfolio {
+  text-align: center;
+  background-color: mistyrose;
+}
+
+
+
+#tangible {  
+    
+}
+
+
+#tangibleheading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+    
+
+#tangibletext {
+    
+    
+}
+
+
+#tangiblebutton {
+    
+    
+}

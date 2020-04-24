@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+    
+<head>   
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- CSS Style sheet link -->
+ <link rel="stylesheet" href="SMC_stylesheet.css"/>
+    
+    
+    <!-- Fonts from Google -->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@200;370&family=Playfair+Display&family=Sedgwick+Ave&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    
+      <title>Seychelle McKay Creative</title>
+     
+    </head>
+
+    
+    
+  <!-- HEADER AND NAV -->
+    
+    <body> 
+        
+        <div class="headerbox">
+                 
+            <div class="logo">
+                SEYCHELLE MCKAY CREATIVE    
+          
+
+<div id="mySidenav" class="sidenav">
+    
+    
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Digital</a>
+    <a href="#">Tangible</a>
+    <a href="#">Full Portfolio</a>
+    <a href="#">Contact</a>
+    
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+            
+          </div>  
+            
+ <!-- SLIDESHOW -->       
+   
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img src="Images/IMG_9631.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="Images/IMG_9641.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/IMG_0426.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+<br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+            }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+            }
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+            
+         <div id="aboutbox">
+            <div class="aboutheading">
+                <h2>About me</h2> 
+                    <br>
+             </div>
+             
+            <div class="abouttext"> 
+                <p>
+                    I am a graphic design major at Massey University in Wellington, New Zealand. Design has been my passion for many years, in that time I have explored many fields such as fine art, graphic design, animation, photography, fashion design, object design and my newly found hobby of leather craft. I like creating work that people can look at for hours, to see hidden intricacies, details, messages and meanings. I like to use my works to say something I feel needs to be said in todays world but I also like creating works for the sake of aesthetics. I have lots to do and learn in the up-coming years so stay tuned for new creations. 
+                </p>   
+            
+                    <br>
+                
+                <p>
+                    If you would like to contact me with questions or commission requests please contact me below.  
+                </p>
+                
+                    <br>        
+                
+            </div>
+            
+            <div id="contactbutton"> 
+                <button>Contact me</button> 
+            </div>
+        
+            <div id="portfoliobutton"> 
+                <button>View Portfolio</button> 
+            </div>
+
+            </div>   
+            
+            
+                    <br>  
+                    <br>
+                    <br>
+                    <br>     
+            
+    <div id="designs"> 
+            
+        <div id="digital">
+            <div id="digitalheading"> 
+                <p> Digital Designs</p>
+            </div>
+            
+            <div id="digitalcontext">  
+                <p> ---INSERT FEATURE PICTURES--- </p>
+            </div>
+
+            <div id="digitalbutton">
+                <button onclick="myFunction()">
+                    <p>View more...</p>   
+                </button>
+            </div>    
+                
+
+            <div id="digitalportfolio">
+                <p>This is my my portfolio. Pictures to go here w lightbox...</p>
+            </div>
+
+     <script>
+        function myFunction() {
+        var x = document.getElementById("digitalportfolio");
+        if (x.style.display === "none") 
+                    {
+        x.style.display = "block";
+            } else  {
+        x.style.display = "none";
+            }
+        }
+    </script>
+              
+        </div>
+        
+        <br>
+        <br>
+        
+        <div id="tangible">
+       
+            <div id="tangibleheading"> 
+             <p> Tangible Designs</p>
+            
+            </div>
+            
+            
+            <div id="tangibletext"> 
+            
+            
+            </div>
+            
+            
+            <div id="tangiblebutton"> 
+            
+            
+            </div>
+        
+        
+        
+        
+        </div>
+            
+            
+    </div>
+            
+            
+  </body>
+        
+</html>
+    
