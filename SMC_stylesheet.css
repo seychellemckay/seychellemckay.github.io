@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -22,7 +21,7 @@ html, body {
 /* Side menu Navigation */
 
 .sidenav {
-    display: inline;
+    display: inline
     float: right;
     height: 100%;
     width: 0;
@@ -33,7 +32,7 @@ html, body {
     background-color: mistyrose;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .sidenav a {
@@ -55,7 +54,7 @@ html, body {
     top: 0;
     left: 5px;
     font-size: 50px;
-    margin-right: 75px;
+    margin-right: 80px;
 }
 
 @media screen and (max-height: 450px) {
@@ -148,16 +147,16 @@ margin-right: 60px;
 
 #aboutbox       {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
 }
 
 
 .aboutheading  {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     grid-column: 2/5;
     text-align: center;
+    padding: 15px;
 }
 
 
@@ -174,7 +173,7 @@ margin-right: 60px;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     height: 50px;
-    width: 100%;
+    width: 80%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -202,7 +201,7 @@ margin-right: 60px;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     height: 50px;
-    width: 100%;
+    width: 80%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -226,19 +225,32 @@ margin-right: 60px;
 
 
 
+#arrow {
+    display: block;
+    margin-left: 46.75%;
+    margin-right: 46.75%; 
+}
+
+
+
+
+
+
 
 /* Designs */
 
 
 #designs {
-    background-color: black;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
 }
 
 
 #digital {
-    
+grid-column: 1/2;
+background-color: gray;
+outline-color: mistyrose;
 }
 
 
@@ -247,6 +259,7 @@ margin-right: 60px;
     font-size: 35px;
     text-align: center;
     color: white;
+    grid-column: 1/2;
 }
 
 #digitalcontext {
@@ -256,6 +269,7 @@ margin-right: 60px;
     color: white;
 }
 
+/*
 #digitalbutton {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 30px;
@@ -270,6 +284,44 @@ margin-right: 60px;
     
 }
 
+*/
+
+
+#digitalbutton {
+    font-family: 'Oswald', sans-serif;
+    grid-column: 3/4;
+    font-size: 15px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+.viewmoredig {
+    grid-column: 3/4;
+    background-color: black;
+    border: 2px solid white;
+    color: black;
+}
+
+.viewmoredig:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
 
 #digitalportfolio {
   text-align: center;
@@ -279,6 +331,8 @@ margin-right: 60px;
 
 
 #tangible {  
+    grid-column: 2/3;
+    background-color: darkgrey;
     
 }
 
@@ -288,6 +342,7 @@ margin-right: 60px;
     font-size: 35px;
     text-align: center;
     color: white;
+    grid-column: 2/3;
 }
     
 
