@@ -12,9 +12,9 @@ html, body {
 .logo { 
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
-    text-align:center;       
+    text-align:center;  
+    padding: 2.5px;
  }
-
 
 
 
@@ -71,8 +71,6 @@ html, body {
 .slideshow-container {
     position: relative;
     margin: auto;
-    padding-left: 60px;
-    padding-right: 60px;
     padding-top: 5px;
 }
 
@@ -95,7 +93,6 @@ html, body {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-margin-right: 60px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -108,9 +105,9 @@ margin-right: 60px;
 /* The dots */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 5px;
+  height: 10px;
+  width: 10px;
+  margin: 3px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -182,7 +179,6 @@ margin-right: 60px;
   transition-duration: 0.4s;
 }
 
-
 .contactbutton {
     grid-column: 2/3;
     background-color: white;
@@ -194,7 +190,6 @@ margin-right: 60px;
     background-color: black;
     color: white;
 }
-
 
 .viewportfolio {
     grid-column: 4/5;
@@ -209,7 +204,6 @@ margin-right: 60px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
-
 
 .portfoliobutton {
     grid-column: 4/5;
@@ -230,8 +224,6 @@ margin-right: 60px;
     margin-left: 46.75%;
     margin-right: 46.75%; 
 }
-
-
 
 
 
