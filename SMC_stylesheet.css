@@ -1,7 +1,7 @@
 * {
-    outline: 1px dotted lime;
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -155,7 +155,7 @@ margin-right: 60px;
 
 .aboutheading  {
     font-family: 'Oswald', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     grid-column: 2/5;
     text-align: center;
 }
@@ -163,23 +163,66 @@ margin-right: 60px;
 
 .abouttext {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align:center;
     grid-column: 2/5;
 }
 
 
-#contactbutton {
-     grid-column: 2/3;
-    float: inherit;
+.contactme {
+    grid-column: 2/3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 
-#portfoliobutton {
-     grid-column: 4/5;
-    float: inherit;
+.contactbutton {
+    grid-column: 2/3;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
 }
 
+.contactbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.viewportfolio {
+    grid-column: 4/5;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+.portfoliobutton {
+    grid-column: 4/5;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.portfoliobutton:hover {
+    background-color: black;
+    color: white;
+}
 
 
 
@@ -195,7 +238,6 @@ margin-right: 60px;
 
 
 #digital {
-   
     
 }
 
@@ -212,7 +254,6 @@ margin-right: 60px;
     font-size: 25px;
     text-align: center;
     color: white;
-    
 }
 
 #digitalbutton {
