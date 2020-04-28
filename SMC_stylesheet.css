@@ -17,11 +17,34 @@ html, body {
  }
 
 
+#backtotop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0,0,0,0.35) ; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; 
+  font-size: 15px; 
+}
+
+#backtotop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 
 /* Side menu Navigation */
 
+
+
+
 .sidenav {
-    display: inline
+    display: inline;
     float: right;
     height: 100%;
     width: 0;
@@ -118,6 +141,7 @@ html, body {
   background-color: #717171;
 }
 
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -135,7 +159,6 @@ html, body {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 
 
 
@@ -164,7 +187,6 @@ html, body {
     grid-column: 2/5;
 }
 
-
 .contactme {
     grid-column: 2/3;
     font-family: 'Oswald', sans-serif;
@@ -175,7 +197,7 @@ html, body {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -191,9 +213,10 @@ html, body {
     color: white;
 }
 
+
 .viewportfolio {
     grid-column: 4/5;
-    font-family: 'Oswald', sans-serif;
+    font-family:'Oswald', sans-serif;
     font-size: 20px;
     height: 50px;
     width: 80%;
@@ -201,7 +224,7 @@ html, body {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -217,6 +240,7 @@ html, body {
     color: white;
 }
 
+  
 
 
 #arrow {
@@ -235,14 +259,12 @@ html, body {
 #designs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 }
 
 
 #digital {
 grid-column: 1/2;
 background-color: gray;
-outline-color: mistyrose;
 }
 
 
@@ -251,63 +273,43 @@ outline-color: mistyrose;
     font-size: 35px;
     text-align: center;
     color: white;
-    grid-column: 1/2;
 }
 
 #digitalcontext {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     color: white;
 }
 
-/*
 #digitalbutton {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    background-color: black;
-    outline-color: white;
-    outline-width: 2pt;
-    outline-style: solid;
-    grid-column: 2/3;
-    
-    
-}
-
-*/
-
-
-#digitalbutton {
-    font-family: 'Oswald', sans-serif;
-    grid-column: 3/4;
-    font-size: 15px;
+    width: 50% ;
     height: 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
 
 .viewmoredig {
-    grid-column: 3/4;
     background-color: black;
-    border: 2px solid white;
-    color: black;
+    font-size: 16pt;
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
+    color: white;
+    float: middle;
+    cursor: pointer;
 }
 
 .viewmoredig:hover {
     background-color: white;
     color: black;
+    border: 2px solid white;
 }
-
-
-
-
 
 
 
@@ -347,4 +349,123 @@ outline-color: mistyrose;
 #tangiblebutton {
     
     
+}
+
+
+
+
+
+
+
+            
+            
+ #contact {
+     box-sizing: border-box;
+     display: grid;
+     color: black;
+}
+
+#contactmeheader {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+ #contactmetext {
+     font-size: 30px;
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width:100%;
+  padding: 12px;
+  border: 1px solid black;
+  margin-top: 4px;
+  margin-bottom: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: mistyrose;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+      
+#footer  {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}     
+
+
+#footerlogo{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 25px;
+    
+}
+
+#footertext {
+    grid-column: 1/2;
+    padding-bottom: 25px;
+    
+}
+
+#socialmediaicons {
+  grid-column: 3/4;
+    
+}
+
+
+.fa {
+  padding: 15px;
+  width: 17px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+     border-radius: 50%;
+    
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
 }
