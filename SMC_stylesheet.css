@@ -187,6 +187,8 @@ html, body {
     grid-column: 2/5;
 }
 
+
+
 .contactme {
     grid-column: 2/3;
     font-family: 'Oswald', sans-serif;
@@ -201,46 +203,34 @@ html, body {
   transition-duration: 0.4s;
 }
 
-.contactbutton {
-    grid-column: 2/3;
+
+.contactme, .viewportfolio {
     background-color: white;
     border: 2px solid black;
     color: black;
-}
-
-.contactbutton:hover {
-    background-color: black;
-    color: white;
-}
-
-
-.viewportfolio {
-    grid-column: 4/5;
-    font-family:'Oswald', sans-serif;
+    display:block;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    grid-column: 2/3;
     height: 50px;
-    width: 80%;
+    padding-top: 0.9em;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+    width: 80%;
+    transition-duration: 0.4s;
 }
 
-.portfoliobutton {
-    grid-column: 4/5;
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-}
 
-.portfoliobutton:hover {
+
+.contactme:hover, .viewportfolio:hover {
     background-color: black;
     color: white;
 }
 
-  
+.contactbutton { grid-column: 2/3 }
+.viewportfolio { grid-column: 4/5 }
+
+
 
 
 #arrow {
@@ -258,98 +248,64 @@ html, body {
 
 #designs {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 
 #digital {
-grid-column: 1/2;
-background-color: gray;
+    grid-column: 1/4;
+    background-color: grey;
 }
 
+#tangible {  
+    grid-column: 4/7;
+    background-color: darkgrey;
+}
 
-#digitalheading {
+#digitalheading, #tangibleheading {
     font-family: 'Oswald', sans-serif;
     font-size: 35px;
     text-align: center;
     color: white;
 }
 
-#digitalcontext {
+#digitaltext, #tangibletext {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     text-align: center;
     color: white;
 }
 
-#digitalbutton {
-    width: 50% ;
-    height: 40px;
+
+
+
+.digitalbutton, .tangiblebutton {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    display:block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 0.9em;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+    width: 100%;
+    transition-duration: 0.4s;
 }
 
 
-.viewmoredig {
+
+.digitalbutton:hover, .tangiblebutton:hover {
     background-color: black;
-    font-size: 16pt;
-    font-family: 'Oswald', sans-serif;
-    height: 40px;
     color: white;
-    float: middle;
-    cursor: pointer;
 }
 
-.viewmoredig:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid white;
-}
+.digitalbutton { grid-column: 2/3;}
+.tangiblebutton { grid-column: 5/6; }
 
 
 
-
-
-
-
-#digitalportfolio {
-  text-align: center;
-  background-color: mistyrose;
-}
-
-
-
-#tangible {  
-    grid-column: 2/3;
-    background-color: darkgrey;
-    
-}
-
-
-#tangibleheading {
-    font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    color: white;
-    grid-column: 2/3;
-}
-    
-
-#tangibletext {
-    
-    
-}
-
-
-#tangiblebutton {
-    
-    
-}
 
 
 
