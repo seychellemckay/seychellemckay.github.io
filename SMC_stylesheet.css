@@ -10,7 +10,7 @@ html, body {
 }
 
 
-.logo { 
+#logo { 
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     text-align:center;  
@@ -19,24 +19,28 @@ html, body {
 
 
 #backtotop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: rgba(0,0,0,0.35) ; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: rgba(0,0,0,0.35) ; 
+  color: white;
+  cursor: pointer; 
+  padding: 15px; 
   border-radius: 5px; 
   font-size: 15px; 
 }
 
 #backtotop:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
 }
+
+
+
+
 
 
 /* Side menu Navigation */
@@ -174,6 +178,7 @@ html, body {
 
 .aboutheading  {
     font-family: 'Oswald', sans-serif;
+    color: mistyrose;
     font-size: 35px;
     grid-column: 2/5;
     text-align: center;
@@ -251,19 +256,19 @@ html, body {
 
 #designs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: black;
+    box-sizing: border-box;
 }
 
 
 #digital {
-    grid-column: 1/4;
-    background-color: grey;
+    background-color: black;
+    box-sizing: border-box;
 }
 
 #tangible {  
-    grid-column: 4/7;
-    background-color: darkgrey;
+    background-color: black;
+    border-top: 2px solid white;
 }
 
 #digitalheading, #tangibleheading {
@@ -271,7 +276,7 @@ html, body {
     font-family: 'Oswald', sans-serif;
     font-size: 35px;
     text-align: center;
-    color: white;
+    color: mistyrose;
 }
 
 #digitaltext, #tangibletext {
@@ -286,60 +291,49 @@ html, body {
 
 
 
- #digitalport {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
 
+ #digitalport {
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+     margin: 10px;
+}
 
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  -ms-flex: 33.333%; /* IE10 */
+  flex: 33.333%;
+  max-width: 33.333%;
+  padding: 0 10px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 20px;
   vertical-align: middle;
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 500px) {
   .column {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
-  }
+    }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-  }
+    }
 }
-
-
-
-
-
-
-
-
 
 
 
