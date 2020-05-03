@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+    
+<head>   
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- CSS Style sheet link -->
+ <link rel="stylesheet" href="SMC_stylesheet.css"/>
+    
+    
+    <!-- Fonts from Google -->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@200;370&family=Playfair+Display&family=Sedgwick+Ave&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    
+      <title>Seychelle McKay Creative</title>
+
+     
+    </head>
+
+    
+    
+  <!-- HEADER AND NAV -->
+    
+    <body> 
+        
+            <button onclick="topFunction()" id="backtotop" title="Go to top"> ^ </button>
+        
+        <script>
+var mybutton = document.getElementById("backtotop"); 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+        
+        <div class="headerbox">
+                 
+            <div id="logo">
+                SEYCHELLE MCKAY CREATIVE    
+
+<div id="mySidenav" class="sidenav">
+    
+    
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#logo">Home</a>
+    <a href="#aboutbox">About</a>
+    <a href="#digital">Digital</a>
+    <a href="#tangible">Tangible</a>
+    <a href="#contact">Contact</a>
+    
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+            
+          
+                
+                
+          </div>    
+           
+            
+ <!-- SLIDESHOW -->       
+   
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="Images/slide1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="Images/slide2.jpg" style="width:100%">
+        </div>
+        
+         <div class="mySlides fade">
+            <img src="Images/slide6.jpg" style="width:100%">
+        </div>
+         <div class="mySlides fade">
+            <img src="Images/slide4.jpg" style="width:100%">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+<br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+            }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+            }
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+            <br>  
+   
+            <div id="aboutbox">
+            <div class="aboutheading">
+                <h2>About me...</h2> 
+             </div>
+                
+             
+            <div class="abouttext"> 
+                <p>
+                    I am a graphic design major at Massey University in Wellington, New Zealand. Design has been my passion for many years. In that time, I have explored many fields such as fine art, graphic design, animation, photography, fashion design, object design and my newly found hobby of leather craft. I like creating work that people can look at for hours, to see hidden intricacies, details, messages and meanings. I like to use my works to say something I feel needs to be said in today's world but I also like creating works for the sake of aesthetics. I have lots to do and learn in the up-coming years, so stay tuned for new creations. 
+                </p>   
+            
+                    <br>
+                
+                <p>
+                    If you would like to contact me with questions or commission requests please contact me below.  
+                </p>
+                
+                    <br>  
+                    <br>  
+           
+            </div>
+        
+                <a class="contactme" href="#contact">
+                    Contact Me
+                </a>
+                
+                <a class="viewportfolio" href="fullportfolio.html">
+                    View Full Portfolio
+                </a>
+            
+              
+                
+          </div>      
+            
+                    <br>  
+                    <br>   
+
+    <div id="arrow">
+        <img src="Images/mistyrosearrow.jpg"style="width:80px">
+    </div>  
+        
+                    <br>    
+                    <br>
+                    <br>    
+                    <br>
+             
+            
+    <div id="designs"> 
+            
+        <div id="digital">
+            
+                    <br> 
+            
+            <div id="digitalheading"> 
+                <p> Digital Designs</p>
+            </div>
+            
+            <div id="digitaltext">  
+                <p>The following are some of my digital creations, mainly comprised of recent Photography, Graphic Design & Animation.</p>
+        
+            </div>
+
+
+<!-- Photo Grid -->
+            
+    <div id="digitalport">   
+            
+        <div class="row"> 
+            
+            <div class="column">
+                <img src="Images/HE%20LOVES%20ME%20NOT%20%20copy.png" style="width:100%"> <p style="text-align:center">Domestic abuse - Athena collection  - A3 Poster design</p>
+                
+                <img src="Images/Minimal%20BWR%20HOME%20copy.png" style="width:100%"> <p style="text-align:center">Domestic abuse - Athena collection  - Website design</p>
+                
+                <img src="Images/IMG_9613%20edit1.jpg" style="width:100%">
+                <p style="text-align:center">Personal Photography</p>
+                
+                <img src="Images/IMG_9631.jpg"> <p style="text-align:center">Powerful women  -  Studio Photography</p>
+                
+            </div>
+                
+            <div class="column">
+                <img src="Images/IMG_0439.jpg"><p style="text-align:center">Powerful women  -  Studio Photography</p>
+                
+                <img src="Images/IMG_9598%20edit1.jpg" style="width:100%">
+                <p style="text-align:center">Personal Photography</p>
+                
+                <img src="Images/development%20HOME%20copy.png" style="width:100%"><p style="text-align:center">Domestic abuse - Athena collection  - Website design</p>
+                
+                <img src="Images/Minimal%20BWR%20LINK%20copy.png"><p style="text-align:center">Domestic abuse - Athena collection  - Website design</p>
+            </div>
+                
+            <div class="column">
+                <img src="Images/IMG_9629%20edit1.jpg">
+                <p style="text-align:center">Personal Photography</p>
+                
+                <img src="Images/I%20AM%20NOT%20AN%20OBJECT%20copy.png" style="width:100%"><p style="text-align:center">Domestic abuse - Athena collection  - A3 Poster design</p>
+                
+                <img src="Images/IMG_9888.jpg">
+                <p style="text-align:center">Powerful women  -  Studio Photography</p>
+            </div>
+        </div>
+    </div>   
+  
+            
+        </div>  
+        
+    <div id="break">
+        <br>
+        <br>
+        
+            <a class="portfoliobutton" href="fullportfolio.html">
+                View Full Portfolio
+            </a>
+                
+        <br> 
+        <br>
+            
+    </div>
+        
+        
+        
+    <div id="tangible">
+       
+        <br> 
+            
+            <div id="tangibleheading"> 
+                <p> Tangible Designs</p>
+            </div>
+            
+        
+            <div id="tangibletext"> 
+                <p>The following are some of my physical creations, mainly comprised of recent leather craft projects, university projects & personal projects.</p>
+            </div>
+             
+            
+        <div id="digitalport">   
+            
+            <div class="row"> 
+              <div class="column">
+                <img src="Images/Screen%20Shot%202020-04-30%20at%206.55.03%20PM.png" style="width:100%">
+                  <p style="text-align:center"> Leather craft - Mystery Braid Bracelet</p>
+              </div>
+                
+                
+              <div class="column">
+                <img src="Images/IMG_0127.jpeg" style="width:100%">
+                  <p style="text-align:center">Object design - Polyproylene Lamp</p>
+         
+
+              </div>
+                  <div class="column">
+                <img src="Images/LAMP2%20copy.jpg" style="width:100%">
+                    <p style="text-align:center">Object design - Polyproylene Lamp</p>
+              </div>
+            </div>
+            
+        </div>
+        
+    </div>
+        
+        
+        
+          <div id="break">
+            <br>
+            <br>
+        
+         
+                <a class="portfoliobutton" href="fullportfolio.html">
+                    View Full Portfolio
+                </a>
+                
+            <br> 
+            <br>
+            <br>
+            </div>
+        
+        
+
+            <div id="contact">
+            
+                <div style="text-align:center">
+                <br>
+                <h1>Contact Me</h1>
+                <p>If you would like to contact me with questions or commission requests please fill out the form below below.</p>
+            </div>
+                
+                
+<div class="container">
+
+
+          <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="Enquiry">Enquiry type:</label>
+            <select id="Enquiry" name="country">
+              <option value="question">Question</option>
+              <option value="commision">Commission</option>
+              <option value="Media">Media</option>
+              <option value="other">Other...</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit" >
+  </form>
+</div>
+
+           </div> 
+            
+            
+        
+            
+      
+    <div id="footer">
+        
+        <div id="footerlogo">
+        <h1>SEYCHELLE MCKAY CREATIVE </h1>
+        </div>
+        
+          <br>
+        
+        <div id="footertext">
+            <p>Auckland, NZ</p>
+            <p>seychelle@mckaycreative.com</p>
+            <p>0212621283</p>
+            <br>
+            <br>
+            <p> ©seychellemckaycreative2020</p>
+       </div>
+        
+        
+        <div id ="socialmediaicons">
+            
+            <p> Connect with me on social media...</p>
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <a href="https://www.facebook.com/seychellemckaycreative" class="fa fa-facebook"></a>
+            
+            <a href="https://www.instagram.com/seychellemckaycreative" class="fa fa-instagram"></a>
+            
+            <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+      
+        
+        </div>
+            
+    </div>  
+            
+            
+    
+            
+            
+  </body>
+        
+</html>
+    

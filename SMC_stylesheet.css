@@ -291,11 +291,11 @@ html, body {
 
 
 
-
  #digitalport {
     box-sizing: border-box;
     font-family: 'Open Sans Condensed', sans-serif;
      margin: 10px;
+     color: white;
 }
 
 .row {
