@@ -56,6 +56,8 @@ function topFunction() {
                  
             <div class="logo"> SEYCHELLE MCKAY CREATIVE </div>
             
+        </div>    
+            
        <div id="backbox" style= text-align: left>
            <a href="index.html"> Back to home </a>
         </div>
@@ -74,13 +76,11 @@ function topFunction() {
 <button class="accordion">Graphic Design:</button>
 <div class="panel">
     
-    
+    <!--- ROW 1 ---> 
 
      <div class="row">
+         
           <div class="column">
-              
-    <!--- ROW 1 --->              
-              
             <img src="Images/development%20HOME%20copy.png" 
                  style="width:100%" 
                  onclick="openModal();currentSlide(1)" 
@@ -108,39 +108,42 @@ function topFunction() {
                  class="hover-shadow cursor">
           </div>
          
-    <!--- ROW 2 --->         
-         
+    </div>  
+    
+    <!--- ROW 2 --->    
+    
+    <div class="row">     
           <div class="column">
             <img src="images/SILENCE%20HIDES%20VIOLENCE%20copy.png" 
                  style="width:100%" 
-                 onclick="openModal();currentSlide(4)" 
+                 onclick="openModal();currentSlide(5)" 
                  class="hover-shadow cursor">
           </div>
          
           <div class="column">
             <img src="images/HE%20LOVES%20ME%20NOT%20%20copy.png" 
                  style="width:100%" 
-                 onclick="openModal();currentSlide(4)" 
+                 onclick="openModal();currentSlide(6)" 
                  class="hover-shadow cursor">
           </div>
          
           <div class="column">
             <img src="images/NOT%20ALL%20VIOLENCE%20IS%20PHYSICAL%20(REVISED%20OCT)%20copy.png" 
                  style="width:100%" 
-                 onclick="openModal();currentSlide(4)" 
+                 onclick="openModal();currentSlide(7)" 
                  class="hover-shadow cursor">
           </div>
          
           <div class="column">
-            <img src="images/I%20AM%20NOT%20AN%20OBJECT%20copy.png" 
+            <img src="images/Artboard1.png" 
                  style="width:100%" 
-                 onclick="openModal();currentSlide(4)" 
+                 onclick="openModal();currentSlide(8)" 
                  class="hover-shadow cursor">
           </div>
-         
-         
+              
     </div>
 
+    
         <div id="myModal" class="modal">
           <span class="close cursor" onclick="closeModal()">&times;</span>
           <div class="modal-content">
@@ -185,7 +188,7 @@ function topFunction() {
             </div>
 
             <div class="mySlides">
-              <img src="images/I%20AM%20NOT%20AN%20OBJECT%20copy.png" 
+              <img src="images/Artboard1.png" 
                    style="width:100%">
             </div>
 
@@ -195,6 +198,8 @@ function topFunction() {
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
     
     <!--- ROW 1 --->
+             
+       <div class="row">       
               
             <div class="column">
               <img class="demo cursor" 
@@ -222,36 +227,256 @@ function topFunction() {
                    style="width:100%" 
                    onclick="currentSlide(4)">
             </div>
-              
+             
+        </div>   
     <!--- ROW 2 --->   
-              
+        <div class="row">    
+           
             <div class="column">
               <img class="demo cursor" 
                    src="Images/SILENCE%20HIDES%20VIOLENCE%20copy.png" 
                    style="width:100%" 
-                   onclick="currentSlide(1)">
+                   onclick="currentSlide(5)">
             </div>
               
             <div class="column">
               <img class="demo cursor" 
                    src="images/HE%20LOVES%20ME%20NOT%20%20copy.png" 
                    style="width:100%" 
+                   onclick="currentSlide(6)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor"     
+                   src="images/NOT%20ALL%20VIOLENCE%20IS%20PHYSICAL%20(REVISED%20OCT)%20copy.png" 
+                   style="width:100%" 
+                   onclick="currentSlide(7)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/Artboard1.png" 
+                   style="width:100%" 
+                   onclick="currentSlide(8)">
+            </div>
+          </div>
+        </div>         
+    </div>
+
+        <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block"; }
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none" }
+        var slideIndex = 1; showSlides(slideIndex);
+        function plusSlides(n) { showSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n);}
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) { slides[i].style.display = "none";}
+          for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", "");}
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";}
+        </script>
+    
+</div>
+
+            
+              
+<button class="accordion">Photography:</button>
+<div class="panel">
+ 
+        <!--- ROW 1 ---> 
+
+     <div class="row">
+         
+          <div class="column">
+            <img src="Images/IMG_9606%20edit1.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(1)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/IMG_9641%20copy.JPG" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(2)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/IMG_9629%20edit1.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(3)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/IMG_9613%20edit1.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(4)" 
+                 class="hover-shadow cursor">
+          </div>
+         
+    </div>  
+    
+    <!--- ROW 2 --->    
+    
+    <div class="row">     
+          <div class="column">
+            <img src="images/IMG_9888.png" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(5)" 
+                 class="hover-shadow cursor">
+          </div>
+         
+          <div class="column">
+            <img src="images/IMG_0060.png" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(6)" 
+                 class="hover-shadow cursor">
+          </div>
+         
+          <div class="column">
+            <img src="images/IMG_0030.png" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(7)" 
+                 class="hover-shadow cursor">
+          </div>
+         
+          <div class="column">
+            <img src="images/IMG_0426.png" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(8" 
+                 class="hover-shadow cursor">
+          </div>
+              
+    </div>
+
+    
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+    <!--- ROW 1 --->          
+              
+            <div class="mySlides">
+              <img src="Images/IMG_9606%20edit1.jpg" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_9641%20copy.JPG" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_9629%20edit1.jpg"
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_9613%20edit1.jpg" 
+                   style="width:100%">
+            </div>
+              
+    <!--- ROW 2 --->      
+        
+            <div class="mySlides">
+              <img src="images/IMG_9888.png" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_0060.png" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_0030.png"
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_0426.png" 
+                   style="width:100%">
+            </div>
+
+    <!--- NEXT/PREV BUTTONS --->      
+              
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <!--- ROW 1 --->
+             
+       <div class="row">       
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="Images/IMG_9606%20edit1.jpg" 
+                   style="width:100%" 
+                   onclick="currentSlide(1)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/IMG_9641%20copy.JPG" 
+                   style="width:100%" 
                    onclick="currentSlide(2)">
             </div>
             <div class="column">
-              <img class="demo cursor"     src="images/NOT%20ALL%20VIOLENCE%20IS%20PHYSICAL%20(REVISED%20OCT)%20copy.png" 
+              <img class="demo cursor"
+                   src="images/IMG_9629%20edit1.jpg" 
                    style="width:100%" 
                    onclick="currentSlide(3)">
             </div>
               
             <div class="column">
               <img class="demo cursor" 
-                   src="images/I%20AM%20NOT%20AN%20OBJECT%20copy.png" 
+                   src="images/IMG_9613%20edit1.jpg" 
                    style="width:100%" 
                    onclick="currentSlide(4)">
             </div>
+             
+        </div>   
+    <!--- ROW 2 --->   
+        <div class="row">    
+           
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/IMG_9888.png" 
+                   style="width:100%" 
+                   onclick="currentSlide(5)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/IMG_0060.png" 
+                   style="width:100%" 
+                   onclick="currentSlide(6)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor"     
+                   src="images/IMG_0030.png" 
+                   style="width:100%" 
+                   onclick="currentSlide(7)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/IMG_0426.png" 
+                   style="width:100%" 
+                   onclick="currentSlide(8)">
+            </div>
           </div>
-        </div>
+              
+        </div>         
+    </div>
 
         <script>
         function openModal() {
@@ -276,33 +501,414 @@ function topFunction() {
     
 </div>
 
-<button class="accordion">Photography:</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+    
+
+            
 
 <button class="accordion">Animation:</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ 
+
+     <div class="row">
+         
+             <div class="halfcolumn">
+                <video width="100%" controls>
+                    <source src="images/Digital%20portfolio%20seychelle%20copy.mp4" type="video/mp4">
+                </video>
+            </div>
+         
+            <div class="halfcolumn">
+                <video width="100%" controls>
+                    <source src="images/countdownanimation.mov" type="video/mp4">
+                </video>
+            </div> 
+              
+    </div>
+    
 </div>
+
+    
 
 <button class="accordion">Leather Craft:</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ 
+         <!--- ROW 1 ---> 
+
+     <div class="row">
+         
+          <div class="column">
+            <img src="Images/wallet1.jpeg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(1)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/wallet2.jpeg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(2)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/wallet3.jpeg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(3)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/wallet4.jpeg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(4)" 
+                 class="hover-shadow cursor">
+          </div>
+         
+    </div>  
+  
+    
+      <!--- ROW 2 ---> 
+
+     <div class="row">
+         
+          <div class="column">
+            <img src="Images/Screen%20Shot%202020-04-30%20at%206.55.03%20PM.png" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(5)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/IMG_7353.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(6)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/IMG_7485.jpeg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(7)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/IMG_7950.jpeg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(8)" 
+                 class="hover-shadow cursor">
+          </div>
+         
+    </div> 
+    
+    
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+    <!--- ROW 1 --->          
+              
+            <div class="mySlides">
+              <img src="Images/wallet1.jpeg" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/wallet2.jpeg" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/wallet3.jpeg"
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/wallet4.jpeg" 
+                   style="width:100%">
+            </div>
+              
+              
+    <!--- ROW 2 --->          
+              
+            <div class="mySlides">
+              <img src="Images/Screen%20Shot%202020-04-30%20at%206.55.03%20PM.png" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_7353.jpg" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_7485.jpeg"
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/IMG_7950.jpeg" 
+                   style="width:100%">
+            </div>
+              
+
+    <!--- NEXT/PREV BUTTONS --->      
+              
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <!--- ROW 1 --->
+             
+       <div class="row">       
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="Images/wallet1.jpeg" 
+                   style="width:100%" 
+                   onclick="currentSlide(1)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/wallet2.jpeg" 
+                   style="width:100%" 
+                   onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+              <img class="demo cursor"
+                   src="images/wallet3.jpeg" 
+                   style="width:100%" 
+                   onclick="currentSlide(3)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/wallet4.jpeg" 
+                   style="width:100%" 
+                   onclick="currentSlide(4)">
+            </div>
+           
+           
+           <!--- ROW 2 --->
+             
+       <div class="row">       
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="Images/Screen%20Shot%202020-04-30%20at%206.55.03%20PM.png" 
+                   style="width:100%" 
+                   onclick="currentSlide(5)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/IMG_7353.jpg" 
+                   style="width:100%" 
+                   onclick="currentSlide(6)">
+            </div>
+            <div class="column">
+              <img class="demo cursor"
+                   src="images/IMG_7485.jpeg" 
+                   style="width:100%" 
+                   onclick="currentSlide(7)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/IMG_7950.jpeg" 
+                   style="width:100%" 
+                   onclick="currentSlide(8)">
+            </div>
+             
+        </div>   
+
+        </div>         
+    </div>
+
+        <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block"; }
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none" }
+        var slideIndex = 1; showSlides(slideIndex);
+        function plusSlides(n) { showSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n);}
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) { slides[i].style.display = "none";}
+          for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", "");}
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";}
+        </script>
+    
 </div>
 
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+        
+        
 <button class="accordion">Object Design:</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    
+         <!--- ROW 1 ---> 
+
+     <div class="row">
+         
+          <div class="column">
+            <img src="Images/LAMP4%20copy.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(1)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/FRONT%20OFF%20copy.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(2)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/BOTTOM%20ON%20copy.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(3)" 
+                 class="hover-shadow cursor">
+          </div>
+            
+          <div class="column">
+            <img src="images/LAMP2%20copy%202.jpg" 
+                 style="width:100%" 
+                 onclick="openModal();currentSlide(4)" 
+                 class="hover-shadow cursor">
+          </div>
+         
+    </div>  
+    
+    
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+    <!--- ROW 1 --->          
+              
+            <div class="mySlides">
+              <img src="Images/LAMP4%20copy.jpg" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/FRONT%20OFF%20copy.jpg" 
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/BOTTOM%20ON%20copy.jpg"
+                   style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/LAMP2%20copy%202.jpg" 
+                   style="width:100%">
+            </div>
+              
+              
+
+    <!--- NEXT/PREV BUTTONS --->      
+              
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <!--- ROW 1 --->
+             
+       <div class="row">       
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="Images/LAMP4%20copy.jpg" 
+                   style="width:100%" 
+                   onclick="currentSlide(1)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/FRONT%20OFF%20copy.jpg" 
+                   style="width:100%" 
+                   onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+              <img class="demo cursor"
+                   src="images/BOTTOM%20ON%20copy.jpg" 
+                   style="width:100%" 
+                   onclick="currentSlide(3)">
+            </div>
+              
+            <div class="column">
+              <img class="demo cursor" 
+                   src="images/LAMP2%20copy%202.jpg" 
+                   style="width:100%" 
+                   onclick="currentSlide(4)">
+            </div>
+           
+           
+
+        </div>         
+    </div>
+
+        <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block"; }
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none" }
+        var slideIndex = 1; showSlides(slideIndex);
+        function plusSlides(n) { showSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n);}
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) { slides[i].style.display = "none";}
+          for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", "");}
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";}
+        </script>
+    
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
 </div>                
-                
+    
+            
+            
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("aactive");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";

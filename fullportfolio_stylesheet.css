@@ -88,15 +88,9 @@ html, body {
 }
 
 
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-.row > .column {
-  padding: 0 8px;
+.row, .column, .halfcolumn {
+    padding: 0 8px;
+    box-sizing: border-box;
 }
 
 .row:after {
@@ -108,6 +102,12 @@ html, body {
 .column {
   float: left;
   width: 25%;
+}
+
+.halfcolumn {
+  float: left;
+  width: 50%;
+    padding: 10px;
 }
 
 /* The Modal (background) */
@@ -164,7 +164,7 @@ html, body {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 325px;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -193,6 +193,7 @@ html, body {
 img {
     margin-bottom: 4px;
     margin-top: 8px;
+    outline: .25px solid lightgray;
 }
 
 .demo {
@@ -211,11 +212,6 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-
-
-
-
 
 
 
