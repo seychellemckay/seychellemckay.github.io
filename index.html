@@ -10,7 +10,7 @@
 
 
   <!-- CSS Style sheet link -->
- <link rel="stylesheet" href="SMC_stylesheet.css"/>
+ <link rel="stylesheet" href="Stylesheet.css"/>
     
     
     <!-- Fonts from Google -->
@@ -158,37 +158,41 @@ function showSlides(n) {
              </div>
                 
              
-            <div class="abouttext"> 
-                <p>
-                    I am a graphic design major at Massey University in Wellington, New Zealand. Design has been my passion for many years. In that time, I have explored many fields such as fine art, graphic design, animation, photography, fashion design, object design and my newly found hobby of leather craft. I like creating work that people can look at for hours, to see hidden intricacies, details, messages and meanings. I like to use my works to say something I feel needs to be said in today's world but I also like creating works for the sake of aesthetics. I have lots to do and learn in the up-coming years, so stay tuned for new creations. 
-                </p>   
+                <div class="abouttext"> 
+                    <p>
+                        I am a graphic design major at Massey University in Wellington, New Zealand. Design has been my passion for many years. In that time, I have explored many fields such as fine art, graphic design, animation, photography, fashion design, object design and my newly found hobby of leather craft. I like creating work that people can look at for hours, to see hidden intricacies, details, messages and meanings. I like to use my works to say something I feel needs to be said in today's world but I also like creating works for the sake of aesthetics. I have lots to do and learn in the up-coming years, so stay tuned for new creations. 
+                    </p>   
             
-                    <br>
+                <br>
                 
-                <p>
-                    If you would like to contact me with questions or commission requests please contact me below.  
-                </p>
+                    <p>
+                        If you would like to contact me with questions or commission requests please contact me below.  
+                    </p>
                 
-                    <br>  
-                    <br>  
+                <br>  
+                <br>  
            
-            </div>
+                </div>
         
-                <a class="contactme" href="#contact">
-                    Contact Me
-                </a>
                 
-                <a class="viewportfolio" href="fullportfolio.html">
-                    View Full Portfolio
-                </a>
+                <a class="contactme" href="#contact">Contact Me</a>
+                
+                <a class="promovid" onclick="myFunction()">View Promo Video</a>
+
+                        <script>
+                        function myFunction() {
+                          window.open("images/SeychelleMcKay_Promo_Video.mp4");
+                        }
+                        </script>
+
+    
+            </div>      
             
-              
-                
-          </div>      
             
                     <br>  
                     <br>   
 
+            
     <div id="arrow">
         <img src="Images/mistyrosearrow.jpg"style="width:80px">
     </div>  
@@ -260,13 +264,7 @@ function showSlides(n) {
         </div>  
         
     <div id="break">
-        <br>
-        <br>
-        
-            <a class="portfoliobutton" href="fullportfolio.html">
-                View Full Portfolio
-            </a>
-                
+        <br>    
         <br> 
         <br>
             
@@ -302,16 +300,22 @@ function showSlides(n) {
             </div>
             
             <div class="column">
-                <img src="Images/IMG_0127.jpeg" style="width:100%">
-                  <p style="text-align:center">Object design - Polyproylene Lamp</p>
-                  
-                  <img src="Images/IMG_0343.jpeg" style="width:100%">
-                  <p style="text-align:center">Leather craft - Folding Wallet </p>
+                  <img src="Images/LAMP2%20copy%202.jpg" style="width:100%">
+                    <p style="text-align:center">Object design - Polyproylene Lamp</p>
+                
+                <img src="Images/IMG_7485.jpeg" style="width:100%">
+                    <p style="text-align:center">Leather craft - Blacksmithing Apron</p>
             </div>
                 
             <div class="column">
-                <img src="Images/LAMP2%20copy%202.jpg" style="width:100%">
-                    <p style="text-align:center">Object design - Polyproylene Lamp</p>
+                <img src="Images/IMG_0343.jpeg" style="width:100%">
+                  <p style="text-align:center">Leather craft - Folding Wallet </p><img>
+                
+                <img src="Images/IMG_0127.jpeg" style="width:100%">
+                  <p style="text-align:center">Object design - Polyproylene Lamp</p>
+                
+                 
+                
             </div>
                 
             </div>
@@ -322,19 +326,13 @@ function showSlides(n) {
         
         
         
-          <div id="break">
-            <br>
-            <br>
+    <div id="break">
+        <br>    
+        <br> 
+        <br>
+            
+    </div>
         
-         
-                <a class="portfoliobutton" href="fullportfolio.html">
-                    View Full Portfolio
-                </a>
-                
-            <br> 
-            <br>
-            <br>
-            </div>
         
         
 
@@ -349,27 +347,26 @@ function showSlides(n) {
                 
 <div class="container">
 
-
+<form action="mailto:seychellemckay@gmail.com" method="post" enctype="text/plain">
           <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="Firstname" placeholder="Your name..">
 
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="Lastname" placeholder="Your last name..">
 
-            <label for="Enquiry">Enquiry type:</label>
-            <select id="Enquiry" name="country">
-              <option value="question">Question</option>
-              <option value="commision">Commission</option>
+            <label for="Subject">Subject:</label>
+            <select id="Subject" name="Subject">
+              <option value="Question">Question</option>
+              <option value="Commision">Commission</option>
               <option value="Media">Media</option>
               <option value="other">Other...</option>
             </select>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type your message here..." style="height:100px"></textarea>
+            <textarea id="message" name="Message" placeholder="Type your message here..." style="height:100px"></textarea>
 
     <input type="submit" value="Submit" >
-</div>
-
+</form>
            </div> 
             
             
