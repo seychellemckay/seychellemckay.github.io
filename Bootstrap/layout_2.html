@@ -3,12 +3,57 @@
         
         <head>
             <meta charset="utf-8" />
-            <title>Layout 1</title>
+            <title>Layout 2</title>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="stylesheet" href="css/bootstrap.min.css"/>
             
             <style>
             
+                * { outline: white 8px solid;}
+                
+                
+                /* xs devices */
+                purple { background-color: red }
+                
+                /* sm devices */
+                @media (min-width: 576px) {
+                purple { background-color: orange }
+                }
+                
+                /* md devices */
+                @media (min-width: 768px) {
+               purple { background-color: yellow }
+                }
+                
+                /* lg devices */
+                @media (min-width: 992px) {}
+                
+                /* xl devices */
+                @media (min-width: 1200px) {}
+                
+                
+                .blue {
+                background-color: #3FB4FF;
+                height: 65px;
+                }
+                
+                .green {  background-color: yellowgreen;
+                height: 1080px;}
+                
+                .orange {  background-color: orange;
+                height: 1080px;}
+                
+                .grey {  background-color: darkgrey;
+                height: 180px;
+                margin: none;}
+                
+                .purple {  background-color: violet;
+                height: 180px;
+                margin: none;
+                }
+    
+                .red {  background-color: darkred;
+                height: 1080px;}
                 
                 
             </style>
@@ -20,27 +65,47 @@
         <body>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 blue"></div>
-                    <div class="col-md-6 blue"></div>
+                    <div class="col-md-12 blue"></div>
                 </div>
                 
-                <div class="container">
                 <div class="row">
-                    <div class="col-md-6 blue"></div>
-                    <div class="col-md-6 blue"></div>
-                </div>
                     
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-6 blue"></div>
-                    <div class="col-md-6 blue"></div>
+                    <div class="col-md-3 green"></div>
+                    
+                        <div class="col-md-6 orange"> 
+                            
+                            <div class="row">
+                                    <div class="col-md-4 grey"></div>
+                                    <div class="col-md-8 purple"></div>
+                            </div>
+                              <div class="row">
+                                    <div class="col-md-4 grey"></div>
+                                    <div class="col-md-8 purple"></div>
+                            </div>
+                             <div class="row">
+                                    <div class="col-md-4 grey"></div>
+                                    <div class="col-md-8 purple"></div>
+                            </div>
+                              <div class="row">
+                                    <div class="col-md-4 grey"></div>
+                                    <div class="col-md-8 purple"></div>
+                            </div>
+                             <div class="row">
+                                    <div class="col-md-4 grey"></div>
+                                    <div class="col-md-8 purple"></div>
+                            </div>
+                              <div class="row">
+                                    <div class="col-md-4 grey"></div>
+                                    <div class="col-md-8 purple"></div>
+                            </div>
+                            
+                        </div>
+                    
+                    <div class="col-md-3 red"></div>
+                    
                 </div>
-
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-6 blue"></div>
-                    <div class="col-md-6 blue"></div>
-                </div>
+              
+                
             </div>
         </body>
     </html>
