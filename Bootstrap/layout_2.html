@@ -7,30 +7,11 @@
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="stylesheet" href="css/bootstrap.min.css"/>
             
+            <!-- so Im not really sure what i did here, and i dont know how to fix it... but i got the desktop layout alright i think, however ive tried to look up how to get it to resize properly and rearrange the boxes but ive found nothing helpful... also played around with "auto" but that hid things and i didnt know how to get them back -->
+            
             <style>
             
                 * { outline: white 8px solid;}
-                
-                
-                /* xs devices */
-                purple { background-color: red }
-                
-                /* sm devices */
-                @media (min-width: 576px) {
-                purple { background-color: orange }
-                }
-                
-                /* md devices */
-                @media (min-width: 768px) {
-               purple { background-color: yellow }
-                }
-                
-                /* lg devices */
-                @media (min-width: 992px) {}
-                
-                /* xl devices */
-                @media (min-width: 1200px) {}
-                
                 
                 .blue {
                 background-color: #3FB4FF;
@@ -63,7 +44,7 @@
         
         
         <body>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 blue"></div>
                 </div>
@@ -76,27 +57,27 @@
                             
                             <div class="row">
                                     <div class="col-md-4 grey"></div>
-                                    <div class="col-md-8 purple"></div>
+                                    <div class="d-none d-sm-none d-md-block col-md-8 purple"></div>
                             </div>
                               <div class="row">
                                     <div class="col-md-4 grey"></div>
-                                    <div class="col-md-8 purple"></div>
+                                    <div class="d-none d-sm-none d-md-block  col-md-8 purple"></div>
                             </div>
                              <div class="row">
                                     <div class="col-md-4 grey"></div>
-                                    <div class="col-md-8 purple"></div>
+                                    <div class="d-none d-sm-none d-md-block  col-md-8 purple"></div>
                             </div>
                               <div class="row">
                                     <div class="col-md-4 grey"></div>
-                                    <div class="col-md-8 purple"></div>
+                                    <div class="d-none d-sm-none d-md-block  col-md-8 purple"></div>
                             </div>
                              <div class="row">
                                     <div class="col-md-4 grey"></div>
-                                    <div class="col-md-8 purple"></div>
+                                    <div class="d-none d-sm-none d-md-block  col-md-8 purple"></div>
                             </div>
                               <div class="row">
                                     <div class="col-md-4 grey"></div>
-                                    <div class="col-md-8 purple"></div>
+                                    <div class="d-none d-sm-block d-md-block col-md-8 purple"></div>
                             </div>
                             
                         </div>
